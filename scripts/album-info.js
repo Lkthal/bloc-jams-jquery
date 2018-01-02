@@ -1,4 +1,4 @@
-$( document ).ready(){
+$(document).ready(function() {
 
   $('#album-title').text(album.title);
   $('.artist').text(album.artist);
@@ -6,4 +6,4 @@ $( document ).ready(){
   $('img#album-cover-art').attr('src', album.albumArtUrl);
 
 
-}
+});
