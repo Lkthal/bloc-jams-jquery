@@ -13,7 +13,7 @@ class Player {
   getTime() {
     return this.soundObject.getTime();
   }
-  
+
   playPause (song = this.currentlyPlaying) {
     if (this.currentlyPlaying !== song) {
       // Stop the currently playing sound file (even if nothing is playing)
@@ -47,6 +47,18 @@ class Player {
     this.volume = percent;
     this.soundObject.setVolume(percent);
   }
+
+  // function prettyTime(timeInSeconds) {
+  //   var seconds = Math.round(seconds);
+  //   var minutes = Math.floor(seconds / 60);
+  //   // Remaining seconds
+  //   seconds = Math.floor(seconds % 60);
+  //   // Add leading Zeros
+  //   minutes = (minutes >= 10) ? minutes : "0" + minutes;
+  //   seconds = (seconds >= 10) ? seconds : "0" + seconds;
+  //   return minutes + ":" + seconds;
+  // }
+
 }
 
 const player = new Player();

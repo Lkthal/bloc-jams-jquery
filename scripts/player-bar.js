@@ -1,6 +1,6 @@
 $(document).ready(function() {
 $('button#play-pause').on('click', function () {
-  player.playPause();
+  helper.playPauseAndUpdate();
   $(this).attr('playState', player.playState);
   });
 
@@ -11,7 +11,7 @@ $('button#play-pause').on('click', function () {
       const nextSongIndex = currentSongIndex + 1;
       if (nextSongIndex >= album.songs.length) {return;}
       const nextSong = album.songs[nextSongIndex];
-      player.playPause(nextSong);
+      helper.playPauseAndUpdate(nextSong);
 
 
     });
@@ -23,7 +23,7 @@ $('button#play-pause').on('click', function () {
       const previousSongIndex = currentSongIndex - 1;
       if (previousSongIndex  ==  - 1) {return;}
       const previousSong = album.songs[previousSongIndex];
-      player.playPause(previousSong);
+      helper.playPauseAndUpdate(previousSong);
 
 
     });
