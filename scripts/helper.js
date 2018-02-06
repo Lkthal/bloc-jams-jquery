@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-$(document).ready(function() {
-class Helper {
-  constructor () {
-    this.helper = new Helper();
-  }
-    playPauseAndUpdate(song) {
-      const totalTime = player.getTime();
-      $('#time-control .total-time').text(totalTime);
-      player.playPause(song);
-    }
-  }
-});
-=======
 
 class Helper {
   constructor () {
@@ -28,4 +14,3 @@ class Helper {
   }
 
 const helper = new Helper();
->>>>>>> checkpoint-2-14-sliders
